@@ -197,3 +197,12 @@ body {
 	width: 100%;
 }
 
+.api-section .btn-more-products{
+	width: 40%;
+	padding: 15px;
+	background-color: var(--color-light);
+	color: var(--color-secondary);
+	border-radius: 4px;
+	border: 1px solid var(--color-secondary);
+	margin-bottom: 30px;
+}
