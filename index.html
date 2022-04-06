@@ -1,96 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Landing page</title>
 
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <!-- header -->
-            <header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
 
-                <h3> Uma seleção de produtos</h3>
-                <h1>especial para você</h1>
-                <span>Todos os produtos dessa lista foram selecionados a partir da sua navegação. Aproveite!</span>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+
+            <h3> Uma seleção de produtos</h3>
+            <h1>especial para você</h1>
+            <span>Todos os produtos dessa lista foram selecionados a partir da sua navegação. Aproveite!</span>
 
 
-                <nav>
-                    <button>Conheça a Linx</button>
-                    <button>Ajude o algorítimo</button>
-                    <button>Seus produtos</button>
-                    <button>Compartilhe</button>
-                </nav>
-            </header>
+            <nav class="navigation">
+                <button>Conheça a Linx</button>
+                <button>Ajude o algorítimo</button>
+                <button>Seus produtos</button>
+                <button>Compartilhe</button>
+            </nav>
+        </header>
 
-            <!-- main content -->
-            <main>
+        <!-- main content -->
+        <main class="main-content">
+            <!-- help the algorithm section -->
+            <section class="algorithm-section">
+                <h2>Ajude o algorítimo a ser mais certeiro</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsum nesciunt nostrum sit voluptate
+                    autem vitae aliquid tempore obcaecati ad consequatur necessitatibus incidunt itaque! Deserunt
+                    doloremque fuga officia accusamus nemo?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima perferendis, obcaecati dolore
+                    repellat quia placeat totam sint explicabo unde ducimus quae dignissimos provident commodi sequi
+                    possimus vero perspiciatis impedit quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, ab, cum illum dolorum veritatis, ipsa debitis tempora fuga impedit quo nostrum officia
+                    aspernatur beatae? Odio exercitationem qui nam dolor? Asperiores?
+                </p>
 
-                 <!-- help the algorithm section -->
-                <section>
-                    <h2>Ajude o algorítimo a ser mais certeiro</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste beatae doloremque, neque in
+                    perferendis vitae reiciendis eveniet fuga error, porro vero, enim soluta. Modi sapiente ad maxime,
+                    excepturi atque dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                    numquam accusantium, temporibus non nostrum, error deserunt dignissimos corrupti ipsam quam eum,
+                    autem aliquid vero sequi incidunt culpa alias tenetur similique.
+                </p>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsum nesciunt nostrum sit voluptate autem vitae aliquid tempore obcaecati ad consequatur necessitatibus incidunt itaque! Deserunt doloremque fuga officia accusamus nemo?
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima perferendis, obcaecati dolore repellat quia placeat totam sint explicabo unde ducimus quae dignissimos provident commodi sequi possimus vero perspiciatis impedit quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ab, cum illum dolorum veritatis, ipsa debitis tempora fuga impedit quo nostrum officia aspernatur beatae? Odio exercitationem qui nam dolor? Asperiores?
-                    </p>
+                <form>
+                    <label for="name">Seu nome:</label>
+                    <input type="text" name="name" id="name">
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste beatae doloremque, neque in perferendis vitae reiciendis eveniet fuga error, porro vero, enim soluta. Modi sapiente ad maxime, excepturi atque dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam numquam accusantium, temporibus non nostrum, error deserunt dignissimos corrupti ipsam quam eum, autem aliquid vero sequi incidunt culpa alias tenetur similique.
-                    </p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
 
-                    <form>
-                        <label for="name">Seu nome:</label>
-                        <input type="text" name="name" id="name">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf">
 
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email">
+                    <input type="radio" name="sex" value="male"> <label for="sex">Masculino</label>
+                    <input type="radio" name="sex" value="female"> <label for="sex">Feminino</label>
+                </form>
+            </section>
 
-                        <label for="cpf">CPF:</label>
-                        <input type="text" name="cpf" id="cpf">
+            <!-- products API section -->
+            <section class="api-section">
+                <hr>
+                <h2>Sua seleção especial</h2>
+                <hr>
 
-                        <input type="radio" name="sex" value="male"> <label for="sex">Masculino</label>
-                        <input type="radio" name="sex" value="female"> <label for="sex">Feminino</label>
-                    </form>
-                </section>
-                
-                <!-- products API section -->
-                <section>
-                    <hr><h2>Sua seleção especial</h2> <hr>
-
-                    <div>
+                <div class="products-wrapper">
+                    <div class="products-box">
 
                     </div>
-
-                    <button>Ainda mais produtos aqui</button>
-                </section>
-
-                <!-- share now section -->
-                <section>
-                    <hr><h2>Compartilhe a novidade</h2> <hr>
-                    <span>Quer que seus amigos tambem ganhem a lista personalizada ddeles? preencha agora</span>
-
-                    <form>
-                        <label for="nameFriend">Nome do seu amigo:</label>
-                        <input type="text" name="nameFriend" id="nameFriend">
-
-                        <label for="emailFriend">E-mail:</label>
-                        <input type="text" name="emailFriend" id="nameFriend">
-                    </form>
-                </section>
-            </main>
-
-            <!-- footer -->
-            <footer>
-                <div>
-                    <p>Testando suas habilidades em HTML, CSS e JS</p>
-                    <p>Linx Impulse</p>
-                    <span>2022</span>
                 </div>
-            </footer>
-        </div>
-    </body>
+                <button>Ainda mais produtos aqui</button>
+            </section>
+
+            <!-- share now section -->
+            <section class="share-section">
+                <hr>
+                <h2>Compartilhe a novidade</h2>
+                <hr>
+                <span>Quer que seus amigos tambem ganhem a lista personalizada ddeles? preencha agora</span>
+
+                <form>
+                    <label for="nameFriend">Nome do seu amigo:</label>
+                    <input type="text" name="nameFriend" id="nameFriend">
+
+                    <label for="emailFriend">E-mail:</label>
+                    <input type="text" name="emailFriend" id="nameFriend">
+                </form>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div>
+                <p>Testando suas habilidades em HTML, CSS e JS</p>
+                <p>Linx Impulse</p>
+                <span>2022</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
