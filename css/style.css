@@ -67,6 +67,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 90px;
 }
 
 .algorithm-section{
@@ -115,3 +116,84 @@ body {
 	border: 1px solid var(--color-secondary);
 	border-radius: 4px;
 }
+
+.api-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ 	justify-content: center;
+	color: var(--color-primary);
+}
+
+.api-section .div-title{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	width: 70vw;
+	color: var(--color-primary);
+} 
+
+.api-section .div-title h2{
+	width: 33%;
+	text-align: center;
+
+}
+
+.api-section .div-title span{
+	border: 1px solid var(--color-primary);
+	height: 1px;
+	width: 33%;
+}
+
+.api-section .products-wrapper{
+	display: grid;
+	grid: 240px / auto auto auto auto;
+	column-gap: 67px;
+	row-gap: 100px;
+	padding: 100px 0px;
+	/* grid-template-columns: 25% 25% 25% 25%; */
+}
+
+.api-section .products-wrapper .products-box{
+	padding: 10px;
+	width: 215px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	justify-content: center;
+	text-align: left;
+}
+
+.api-section .products-wrapper .products-box img{
+	border: 1px solid black;
+	width: 190px;
+}
+
+.api-section .products-wrapper .products-box p {
+	font-size: 12px;
+}
+
+.api-section .products-wrapper .products-box h4{
+	font-size: 14px;
+	text-align: left;
+}
+
+.api-section .products-wrapper .products-box{
+	font-size: 16px;
+}
+
+.api-section .products-wrapper .products-box span{
+	font-size: 12px;
+}
+
+.api-section .products-wrapper .products-box .btn-buy{
+	display: block;
+	padding: 7px;
+	background-color: var(--color-light);
+	border: 1px solid var(--color-secondary);
+	border-radius: 4px;
+	width: 100%;
+}
+
