@@ -268,3 +268,16 @@ body {
 	background-color: var(--color-light);
 	border-radius: 4px;
 }
+
+
+.footer{
+	background-color: var(--color-secondary);
+	width: 100vw;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-light);
+	clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+}
