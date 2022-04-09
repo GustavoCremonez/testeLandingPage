@@ -105,10 +105,18 @@ body {
 	gap: 10px;
 }
 
+.algorithm-section form.hidden{
+	display: none;
+}
+
 .algorithm-section form input{
 	background-color: var(--color-light);
 	padding: 10px;
 	border: 1px solid var(--color-secondary);
+}
+
+.algorithm-section form input.alert{
+	border: 1px solid red
 }
 
 .algorithm-section form button{
@@ -118,12 +126,23 @@ body {
 	border-radius: 4px;
 }
 
+.div-success h3{
+	color: rgb(44, 168, 81);
+	border: 1px solid var(--color-primary);
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	box-shadow: 0px 0px 5px rgb(44, 168, 81);
+}
+
 .api-section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
  	justify-content: center;
 	color: var(--color-primary);
+	max-width: 100%;
+	width: 100%;
 }
 
 .api-section .div-title{
@@ -149,7 +168,7 @@ body {
 
 .api-section .products-wrapper{
 	display: grid;
-	grid: 300px / auto auto auto auto;
+	grid:200px / auto auto auto auto;
 	column-gap: 67px;
 	row-gap: 100px;
 	padding: 100px 0px;
@@ -168,7 +187,7 @@ body {
 
 .api-section .products-wrapper .products-box img{
 	border: 1px solid black;
-	width: 190px;
+	width: 100%;
 }
 
 .api-section .products-wrapper .products-box p {
@@ -242,8 +261,9 @@ body {
 
 .share-section form{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 80px;
+	align-items: center;
 }
 
 .input-wrapper{
@@ -253,12 +273,36 @@ body {
 	color: var(--color-secondary);
 }
 
-.share-section form .input-wrapper input{
+.share-section form .inputs{
+	display: flex;
+	justify-content: space-around;
+	gap: 100px;
+}
+
+.share-section form.hidden{
+	display: none;
+} 
+
+.share-section form .inputs .input-wrapper input{
 	width: 340px;
 	padding: 10px;
 }
 
+.share-section form .inputs .input-wrapper input.alert{
+	border: 1px solid red;
+}
+
+.div-success-friend h3{
+	color: rgb(44, 168, 81);
+	border: 1px solid var(--color-primary);
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	box-shadow: 0px 0px 5px rgb(44, 168, 81);
+}
+
 .share-section button{
+	display: block;
 	padding: 10px;
 	font-size: 18px;
 	font-weight: 400;
@@ -280,4 +324,8 @@ body {
 	align-items: center;
 	color: var(--color-light);
 	clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.hidden{
+	display: none;
 }

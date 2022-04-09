@@ -53,26 +53,31 @@
 						autem aliquid vero sequi incidunt culpa alias tenetur similique.
 					</p>
 				</div>
-				<form>
+				<form id="algorithm-form">
 					<label for="name">Seu nome:</label>
-					<input type="text" name="name" id="name">
+					<input type="text" name="name" id="name" class="">
 
 					<label for="email">E-mail:</label>
-					<input type="email" name="email" id="email">
+					<input type="email" name="email" id="email" class="">
 
 					<label for="cpf">CPF:</label>
-					<input type="text" name="cpf" id="cpf">
+					<input type="text" name="cpf" id="cpf" class="">
 
 					<div class="form-radios">
-					<input type="radio" name="sex" value="male"> <label for="sex">Masculino</label>
-					<input type="radio" name="sex" value="female"> <label for="sex">Feminino</label>
+					<input type="radio" name="sex" value="male" class=""> <label for="sex">Masculino</label>
+					<input type="radio" name="sex" value="female" class=""> <label for="sex">Feminino</label>
 					</div>
 					<button>Enviar</button>
 				</form>
+
+
+				<div class="div-success hidden">
+					<h3>Dados armazenados com sucesso obrigado!!!</h3>
+				</div>
 			</section>
 
 			<!-- products API section -->
-			<section class="api-section" id="products-section ">
+			<section class="api-section" id="products-section">
 				<div class="div-title">
 					<span></span>
 					<h2>Sua seleção especial</h2>
@@ -93,21 +98,28 @@
 					<span></span>
 				</div>
 			
-				<p>Quer que seus amigos tambem ganhem a lista personalizada ddeles? preencha agora</p>
+				<p>Quer que seus amigos também ganhem a lista personalizada deles? preencha agora</p>
 
-				<form>
-					<div class="input-wrapper">
-						<label for="nameFriend">Nome do seu amigo:</label>
-						<input type="text" name="nameFriend" id="nameFriend">
-					</div>
+				<form class="share-form">
 
-					<div class="input-wrapper">
-						<label for="emailFriend">E-mail:</label>
-						<input type="text" name="emailFriend" id="nameFriend">
-					</div>
-
+					<div class="inputs">
+						<div class="input-wrapper">
+							<label for="nameFriend">Nome do seu amigo:</label>
+							<input type="text" name="nameFriend" id="nameFriend" class="">
+						</div>
+	
+						<div class="input-wrapper">
+							<label for="emailFriend">E-mail:</label>
+							<input type="text" name="emailFriend" id="emailFriend" class="">
+						</div>
+					</Div>
+					<button>Enviar agora</button>
 				</form>
-				<button>Enviar agora</button>
+				
+
+				<div class="div-success-friend hidden">
+					<h3>Obrigado pela indicação seu amigo agora também esta participando!!!</h3>
+				</div>
 			</section>
 		</main>
 

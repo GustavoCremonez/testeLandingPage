@@ -1,4 +1,8 @@
 const productsWrapper = document.querySelector('.products-wrapper')
+const algorithmForm = document.querySelector('#algorithm-form')
+const shareForm = document.querySelector('.share-form')
+const successDiv = document.querySelector('.div-success')
+const successDivFriends = document.querySelector('.div-success-friend')
 const moreProducts = document.querySelector('.btn-more-products')
 let apiUrl = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
 
@@ -49,8 +53,43 @@ const loadAPI = function(apiUrl){
     fetchAPI()
 }
 
-const formValidation = function(){
 
-}
+algorithmForm.addEventListener('submit', function(e){
+    e.preventDefault()
+    const target = e.target
+    const name = target.name
+    const email = target.email
+    const cpf = target.cpf
+    const sex = target.sex
+
+    if(name.value != '' & email.value != '' & cpf.value != '' & sex.value != ''){
+        algorithmForm.classList.add('hidden')
+        successDiv.classList.remove('hidden')
+    }else {
+        name.classList.add('alert')
+        email.classList.add('alert')
+        cpf.classList.add('alert')
+    }
+})
+
+shareForm.addEventListener('submit', function(e) {
+    e.preventDefault()
+    const target = e.target
+    const nameFriend = target.nameFriend
+    const emailFriend = target.emailFriend
+
+    console.log(nameFriend)
+
+    if(nameFriend.value != '' & emailFriend.value != ''){
+        shareForm.classList.add('hidden')
+        successDivFriends.classList.remove('hidden')
+    }else {
+        nameFriend.classList.add('alert')
+        emailFriend.classList.add('alert')
+    }
+})
+
+
+
 
 loadAPI(apiUrl)
