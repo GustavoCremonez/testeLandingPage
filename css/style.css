@@ -333,6 +333,10 @@ body {
 	box-shadow: 0px 0px 5px rgb(44, 168, 81);
 }
 
+.div-success-friend.hidden{
+	display: none;
+}
+
 .share-section button{
 	display: block;
 	padding: 10px;
