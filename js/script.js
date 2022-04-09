@@ -10,7 +10,6 @@ let apiUrl = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?
 const loadAPI = function(apiUrl){
     
     fetchAPI = function(){
-        
         fetch(apiUrl)
         .then(toJson)
         .then(makeBoxes)
@@ -39,9 +38,11 @@ const loadAPI = function(apiUrl){
             </div>
             `
         }
+
+        // change the API url to the next one at the end of the body of the JSON returned in the current url
         apiUrl = data.nextPage
         
-
+        // when clicking on the more products button, it calls the function again, this time with the url previously changed
         moreProducts.addEventListener('click', function(){
             loadAPI(`https://${apiUrl}`)
         })
@@ -62,6 +63,11 @@ algorithmForm.addEventListener('submit', function(e){
     const cpf = target.cpf
     const sex = target.sex
 
+
+    // checking if the form fields have something that is not empty 
+    // if it is empty, it fills the inputs with a class that will turn the inputs red
+    // if it is filled, it adds a class to the form that has the function of hiding the 
+    // form and adds a class that has the function of showing the successful div
     if(name.value != '' & email.value != '' & cpf.value != '' & sex.value != ''){
         algorithmForm.classList.add('hidden')
         successDiv.classList.remove('hidden')
@@ -78,18 +84,18 @@ shareForm.addEventListener('submit', function(e) {
     const nameFriend = target.nameFriend
     const emailFriend = target.emailFriend
 
-    console.log(nameFriend)
 
+    // checking if the form fields have something that is not empty 
+    // if it is empty, it fills the inputs with a class that will turn the inputs red
+    // if it is filled, it adds a class to the form that has the function of hiding the 
+    // form and adds a class that has the function of showing the successful div
     if(nameFriend.value != '' & emailFriend.value != ''){
-        shareForm.classList.add('hidden')
+        shareForm.classList.add('hidden') 
         successDivFriends.classList.remove('hidden')
-    }else {
+    }else { 
         nameFriend.classList.add('alert')
         emailFriend.classList.add('alert')
     }
 })
 
-
-
-
-loadAPI(apiUrl)
+loadAPI()
