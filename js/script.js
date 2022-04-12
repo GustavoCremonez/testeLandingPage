@@ -54,7 +54,6 @@ const loadAPI = function(apiUrl){
     fetchAPI()
 }
 
-
 algorithmForm.addEventListener('submit', function(e){
     e.preventDefault()
     const target = e.target
